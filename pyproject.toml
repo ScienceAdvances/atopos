@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "bioquest"
+version = "1.0.1"
+description = "Bioinformatics data analysis and visualization toolkit"
+authors = ["生信探索 BioQuest <aubot@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.19.5"
+pandas = ">1.5,<=2.2.2"
+matplotlib = "3.*"
+scikit-learn = "^1.0"
+scipy = "^1.6.0"
+joblib = "^1.2.0"
+threadpoolctl = "^3.1.0"
+bioinfokit = "2.*"
+matplotlib-venn="^0.11"
+seaborn="0.*"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

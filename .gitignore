@@ -1,0 +1,10 @@
+dist
+deprecated.py
+bioquest/__pycache__
+bioquest/_data/__pycache__
+bioquest/ml/__pycache__
+bioquest/pl/__pycache__
+bioquest/st/__pycache__
+bioquest/tl/__pycache__
+.DS_Store
+bioquest/.DS_Store
