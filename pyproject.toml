@@ -1,26 +1,39 @@
-[tool.poetry]
-name = "bioquest"
-version = "1.0.1"
+[project]
+name = "atopos"
+version = "1.0.0"
 description = "Bioinformatics data analysis and visualization toolkit"
-authors = ["生信探索 BioQuest <aubot@hotmail.com>"]
+authors = [{ name = "生信探索 BioQuest", email = "yehior@qq.com" }]
 readme = "README.md"
+requires-python = ">=3.9"
+dependencies=[
+"numpy>1.19.5",
+"pandas>1.5",
+"matplotlib>3",
+"scikit-learn>1.0",
+"scipy>1.6.0",
+"joblib>1.2.0",
+"threadpoolctl>3.1.0",
+"bioinfokit>2",
+"matplotlib-venn>0.11",
+"seaborn>0.10"
+]
 
-[tool.poetry.dependencies]
-python = "^3.9"
-numpy = "^1.19.5"
-pandas = ">1.5,<=2.2.2"
-matplotlib = "3.*"
-scikit-learn = "^1.0"
-scipy = "^1.6.0"
-joblib = "^1.2.0"
-threadpoolctl = "^3.1.0"
-bioinfokit = "2.*"
-matplotlib-venn="^0.11"
-seaborn="0.*"
 
-[tool.poetry.group.dev.dependencies]
-pre-commit = "^3.7.1"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ScienceAdvances/atopos"
+
+[tool.setuptools]
+packages = ["atopos"]
+
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
