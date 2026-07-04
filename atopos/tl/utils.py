@@ -4,10 +4,13 @@ import numpy as np
 import pandas as pd
 from ..st import removes,subs
 from ._frame import select
+import pathlib
 
 
 # flatten a nest list
 # flatten = lambda nest_list: sum(([x] if not isinstance(x, list) else flatten(x) for x in nest_list), [])
+def mkdir(dir):
+    pathlib.Path(dir).mkdir(parents=True,exist_ok=True)
 
 def dict_slice(adict:dict, start:int, end:int)->dict:
     '''
