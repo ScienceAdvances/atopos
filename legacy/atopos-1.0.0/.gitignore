@@ -1,0 +1,10 @@
+dist
+deprecated.py
+atopos/__pycache__
+atopos/_data/__pycache__
+atopos/ml/__pycache__
+atopos/pl/__pycache__
+atopos/st/__pycache__
+atopos/tl/__pycache__
+.DS_Store
+atopos/.DS_Store

@@ -1,3 +1,5 @@
-class Palette:
-    economist = ("#6794a7", "#014d64", "#01a2d9", "#7ad2f6","#00887d", "#76c0c1", "#7c260b", "#ee8f71", "#adadad")
-    set2 = ("#1B9E77", "#D95F02", "#7570B3", "#E7298A", "#66A61E", "#E6AB02", "#A6761D", "#666666")
+"""Compatibility import for the original palette class."""
+
+from ..palettes import Palette
+
+__all__ = ["Palette"]

@@ -1,6 +1,6 @@
-from ._frame import select,subset
-from ._IO import saveimg
-from .utils import mkdir,dict_slice,flatten,unique_exprs,get_TCGA_mRNA
-from .gene import current_symbol,deg_siglabel,deg_filter,deseq,geneIDconverter,countto
+"""Compatibility namespace for the original export and directory helpers."""
 
-__all__=()
+from ..export import saveimg
+from ..utils import mkdir
+
+__all__ = ["mkdir", "saveimg"]
